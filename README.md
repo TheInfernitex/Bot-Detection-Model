@@ -23,8 +23,8 @@ pip install -r requirements.txt
 ```
 
 #### Preprocess data
-````bash
-python preprocess.py
+```bash
+python preprocess.py 
 ```
 
 #### Train the model
