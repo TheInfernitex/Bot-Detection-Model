@@ -1,1 +1,34 @@
-withBERT/myenv
+# Virtual Environment
+myenv3/
+
+# Model files
+models/
+
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Dataset files (if applicable)
+data/
+
+# Environment variable files
+.env
+
+# Python distribution files
+*.egg
+*.egg-info
+dist/
+build/
+
