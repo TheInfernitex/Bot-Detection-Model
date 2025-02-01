@@ -19,23 +19,28 @@ User ID, Username, Tweet, Retweet Count, Mention Count, Follower Count, Verified
 
 #### Install dependencies
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 #### Preprocess data
 ````bash
-python preprocess.py```
+python preprocess.py
+```
 
 #### Train the model
 ```bash
-python train.py```
+python train.py
+```
 
 #### Evaluate performance
 ```bash
-python evaluate.py```
+python evaluate.py
+```
 
 #### Run bot detection
 ```bash
-python detect.py --input sample_tweets.csv```
+python detect.py --input sample_tweets.csv
+```
 
 ## Methodology
 - Feature Extraction: Text-based (TF-IDF, embeddings), behavioral (posting patterns)
