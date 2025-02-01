@@ -4,6 +4,17 @@ import tensorflow as tf
 from transformers import BertTokenizer, TFBertForSequenceClassification, AdamWeightDecay
 from sklearn.model_selection import train_test_split
 
+# Ensure TensorFlow uses GPU
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    try:
+        tf.config.experimental.set_memory_growth(gpus[0], True)  # Prevents memory allocation issues
+        print("✅ TensorFlow is using the GPU!")
+    except RuntimeError as e:
+        print("⚠️ Error enabling GPU:", e)
+else:
+    print("❌ TensorFlow is NOT using the GPU.")
+
 # Load dataset
 df = pd.read_csv("data/processed_data.csv")
 

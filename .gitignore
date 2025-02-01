@@ -20,8 +20,6 @@ __pycache__/
 # Logs
 *.log
 
-# Dataset files (if applicable)
-data/
 
 # Environment variable files
 .env
